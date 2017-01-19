@@ -1,26 +1,27 @@
 {
-	"name": "node-cluster-interprocess",
-	"version": "0.0.0",
+  "name": "node-cluster-interprocess",
+  "version": "0.0.1",
   "private": "true",
-	"description": "Node cluster interprocess communication via UNIX socket",
-	"main": "server.js",
-	"scripts": {
-		"start": "node server.js"
-	},
-	"dependencies": {
-		"express": "^4.14.0"
-	},
-	"engines": {
-		"node": "6.2.1"
-	},
-	"repository": {
-		"url": "https://gomix.com/#!/project/welcome-project"
-	},
-	"keywords": [
-		"node",
-		"express",
-    "cluster",
-    "net",
-    "unix-socket"
-	]
+  "description": "Node cluster interprocess communication via UNIX socket",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+    },
+  "dependencies": {
+    "express": "^4.14.0"
+    },
+  "engines": {
+    "node": "6.2.1"
+    },
+  "license" : "MIT",
+  "repository": {
+    "url": "https://github.com/Em-Ant/node-cluster-interproc"
+    },
+  "keywords": [
+  "node",
+  "express",
+  "cluster",
+  "net",
+  "unix-socket"
+  ]
 }

@@ -5,17 +5,17 @@ if(cluster.isMaster) {
   const procNumber = require('os').cpus().length
   const net = require('net');
 
-  // basic echo server, which appends a signature string
+  // basic echo server. It also appends a signature string.
   const server = net.createServer(s => {
     s.on('data', data => {
       s.write( data.toString() + ' <-- [from server]')
     })
   })
 
-  // remove the socket files or they will block the app
+  // remove the old socket files or they will block the app.
   fs.unlinkSync(__dirname + '/tmp.sock');
 
-  // the server in the master process is litening to a UNIX socket
+  // the server in the master process is listening to a UNIX socket
   server.listen(__dirname + '/tmp.sock', () => {
     console.log('starting master', process.pid);
     for (let i = 0; i < procNumber-1; i++)
