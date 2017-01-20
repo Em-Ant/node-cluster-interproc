@@ -1,27 +1,29 @@
 {
-  "name": "node-cluster-interprocess",
-  "version": "0.0.1",
-  "private": "true",
-  "description": "Node cluster interprocess communication via UNIX socket",
-  "main": "server.js",
-  "scripts": {
-    "start": "node server.js"
-    },
-  "dependencies": {
-    "express": "^4.14.0"
-    },
-  "engines": {
-    "node": "6.2.1"
-    },
-  "license" : "MIT",
-  "repository": {
-    "url": "https://github.com/Em-Ant/node-cluster-interproc"
-    },
-  "keywords": [
-  "node",
-  "express",
-  "cluster",
-  "net",
-  "unix-socket"
-  ]
+	"name": "node-cluster-interprocess-rpc",
+	"version": "0.0.1",
+	"private": "true",
+	"description": "Node cluster interprocess rpc via UNIX socket",
+	"main": "server.js",
+	"scripts": {
+		"start": "node server.js"
+	},
+	"dependencies": {
+		"express": "^4.14.0",
+		"rpc-stream": "^2.1.2"
+	},
+	"engines": {
+		"node": "6.2.1"
+	},
+	"license": "MIT",
+	"repository": {
+		"url": "https://github.com/Em-Ant/node-cluster-interproc"
+	},
+	"keywords": [
+		"node",
+		"express",
+		"cluster",
+		"net",
+		"rpc",
+		"unix-socket"
+	]
 }
