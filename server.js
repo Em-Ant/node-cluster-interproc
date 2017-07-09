@@ -10,7 +10,7 @@ if(cluster.isMaster) {
   // It also appends a signature string.
   const server = net.createServer(s => {
     const server = rpc({addTail: function(data, cb){
-      cb(null, data + ' <--[from rpc]');
+      cb(null, `${data} <--[from rpc - pid: ${process.pid}]`);
     }})
     server.pipe(s).pipe(server);
   })
